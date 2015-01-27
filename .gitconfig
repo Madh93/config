@@ -1,0 +1,9 @@
+[user]
+	name = Madh93
+	email = michelangelo93@gmail.com
+[core]
+	editor = vi
+[credential]
+	helper = cache
+[push]
+	default = matching
