@@ -1,0 +1,48 @@
+background yes
+font Snap.se:size=8
+xftfont Snap.se:size=8
+use_xft yes
+xftalpha 0.1
+update_interval 1
+total_run_times 0
+
+own_window yes
+own_window_title clicky 
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+minimum_size 650
+maximum_width 650
+default_color ffffff
+default_shade_color 000000
+default_outline_color 000000
+alignment top_right
+gap_x 30
+gap_y 50
+no_buffers yes
+cpu_avg_samples 2
+override_utf8_locale yes
+uppercase no # set to yes if you want all text to be in uppercase
+use_spacer no
+
+imlib_cache_size 0  
+
+    TEXT
+
+${if_running spotify}${exec ~/.conky/conky-spotify/scripts/cover.sh}
+${voffset -60}${image ~/.conky/conky-spotify/current/current.jpg -p 0,0 -s 164x164}
+${image ~/.conky/conky-spotify/background.png}
+
+${alignr 440}${color EAEAEA}${font GE Inspira:pixelsize=11}Título: 
+                                                           ${color #FFFFFF}${font GE Inspira:pixelsize=36}${exec ~/.conky/conky-spotify/scripts/title.sh}
+${alignr 364}${voffset -20}${color EAEAEA}${font GE Inspira:pixelsize=11}Artista: 
+                                                           ${color #FFFFFF}${font GE Inspira:pixelsize=28}${exec ~/.conky/conky-spotify/scripts/artist.sh}
+${alignr 390}${voffset -16}${color EAEAEA}${font GE Inspira:pixelsize=11}Album: 
+                                                           ${color #FFFFFF}${font GE Inspira:pixelsize=20}${exec ~/.conky/conky-spotify/scripts/album.sh}  
+                                                           ${endif}                                                         

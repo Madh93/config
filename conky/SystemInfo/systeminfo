@@ -1,0 +1,37 @@
+background yes
+font Snap.se:size=8
+xftfont Snap.se:size=8
+use_xft yes
+xftalpha 0.1
+update_interval 3.0
+total_run_times 0
+
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+minimum_size 110
+maximum_width 300
+default_color ffffff
+default_shade_color 000000
+default_outline_color 000000
+alignment bottom_right
+gap_x 10
+gap_y 10
+no_buffers yes
+cpu_avg_samples 2
+override_utf8_locale yes
+uppercase no # set to yes if you want all text to be in uppercase
+use_spacer no
+
+TEXT
+  ${font Ubuntu:style=bold:size=10}CPU1      ${cpu cpu1}%   ${exec /home/migue/.conky/SystemInfo/temp.sh core0}ºC
+  CPU2      ${cpu cpu2}%   ${exec /home/migue/.conky/SystemInfo/temp.sh core1}ºC
+  ${font Ubuntu:style=bold:size=10}RAM          $mem  
+  ${font Ubuntu:style=bold:size=10}SWAP        $swap
