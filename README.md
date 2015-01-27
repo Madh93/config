@@ -14,31 +14,31 @@ Aplicaciones fuera de los repositorios.
 
 **Chrome**
 ```sh
-$
+$ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+$ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+$ sudo apt-get update && sudo apt-get install google-chrome-stable
 ```
 **Telegram**
-```sh
-$
-```
+- [Descargar](https://desktop.telegram.org/)
+
 **Sublime Text 3**
-```sh
-$
-```
+- [Descargar](http://www.sublimetext.com/3)
+
 **LibreOffice**
 ```sh
-$
+$ sudo add-apt-repository ppa:libreoffice/ppa
+$ sudo apt-get update && sudo apt-get install libreoffice-l10n-es libreoffice-gnome myspell-es
 ```
 **Spotify**
 ```sh
-$
-```
-**Conky**
-```sh
-$ 
+$ sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
+$ sudo apt-get update && sudo apt-get install spotify-client
 ```
 **Plank**
 ```sh
-$ 
+$ sudo add-apt-repository ppa:ricotz/docky
+$ sudo apt-get update && sudo apt-get install plank
 ```
 
 ## Otros
