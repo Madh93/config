@@ -36,6 +36,20 @@ $ sudo apt-get update && sudo apt-get install spotify-client
 $ sudo add-apt-repository ppa:ricotz/docky
 $ sudo apt-get update && sudo apt-get install plank
 ```
+**Grub Customizer**
+```sh
+$ sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+$ sudo apt-get update && sudo apt-get install grub-customizer
+```
+**Ruby(RVM)**
+- [Seguir pasos](https://gorails.com/setup/ubuntu/14.04)
+ 
+**Java**
+```sh
+$ sudo add-apt-repository ppa:webupd8team/java
+$ sudo apt-get update && sudo apt-get install oracle-java8-installer
+$ sudo apt-get install oracle-java8-set-default
+```
 
 ## Otros
 
