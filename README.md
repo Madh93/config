@@ -54,3 +54,12 @@ $ sudo apt-get install oracle-java8-set-default
 ## Otros
 
 ## Problemas
+
+**Spotify no reproduce archivos locales**
+```sh
+$ sudo wget https://github.com/Madh93/config/raw/master/spotify/libavcodec.so.53 -O /usr/lib/i386-linux-gnu/libavcodec.so.53
+$ sudo wget https://github.com/Madh93/config/raw/master/spotify/libavformat.so.53 -O /usr/lib/i386-linux-gnu/libavformat.so.53
+$ sudo wget https://github.com/Madh93/config/raw/master/spotify/libavutil.so.51 -O /usr/lib/i386-linux-gnu/libavutil.so.51
+$ sudo ldconfig
+$ sudo apt-get install ubuntu-restricted-extras
+```
