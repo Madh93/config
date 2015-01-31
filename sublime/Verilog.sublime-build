@@ -6,7 +6,7 @@
   [
     {
       "name": "Run",
-      "shell_cmd": "${file_path}/${file_base_name}"
+      "shell_cmd": "vvp ${file_path}/${file_base_name}"
     }
   ]
 }
