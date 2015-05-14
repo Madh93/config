@@ -19,8 +19,11 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+# HISTSIZE=1000
+# HISTFILESIZE=2000
+# unlimited size
+HISTSIZE= 
+HISTFILESIZE=
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -102,6 +105,14 @@ if [ -x /usr/bin/dircolors ]; then
     alias racpi='ruby ~/Aplicaciones/acpi.rb'
     alias betty='~/Escritorio/repos/betty/main.rb'
     alias sshqhh='ssh root@178.62.14.191'
+    alias rubysh='ruby ~/Escritorio/codigo/Ruby/shell.rb'
+    alias update='sudo apt-get update'
+    alias upgrade='sudo apt-get upgrade'
+    alias remove='sudo apt-get remove'
+    alias autoremove='sudo apt-get autoremove'
+    alias purge='sudo apt-get purge'
+    alias get='sudo apt-get install'
+    alias di='~/Aplicaciones/di.sh'
 
 fi
 
@@ -146,3 +157,12 @@ source ~/.rvm/scripts/rvm
 export GOROOt=/usr/local/go
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+
+## Variables Ruby on Rails - Que Hago Hoy
+# export DOMAIN=
+# export SMTP_SERVER=
+# export SMTP_PORT=
+# export MAILER_DOMAIN=
+# export SMTP_USER=
+# export SMTP_PWD=

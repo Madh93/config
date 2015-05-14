@@ -1,0 +1,24 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"C++ Snippets",
+		"CLIPS Rules",
+		"ERB Autocomplete",
+		"Git",
+		"HTML5",
+		"Markdown Preview",
+		"MIPS Syntax",
+		"Oracle PL SQL",
+		"Package Control",
+		"Protocol Buffer Syntax",
+		"Rust",
+		"SCSS",
+		"SFTP",
+		"SystemVerilog",
+		"Terminal",
+		"Valgrind"
+	]
+}

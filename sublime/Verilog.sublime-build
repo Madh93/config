@@ -1,5 +1,5 @@
 {
-"shell_cmd" : "iverilog $file_name -o ${file_base_name}",
+"shell_cmd" : "iverilog $file_name -o ${file_base_name} && vvp ${file_path}/${file_base_name}",
 "working_dir" : "$file_path",
 "selector" : "source.v",
 "variants":
