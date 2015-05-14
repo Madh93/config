@@ -1,0 +1,4 @@
+{
+"shell_cmd" : "nodejs $file_name",
+"selector" : "source.js",
+}
